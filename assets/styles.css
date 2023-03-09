@@ -49,6 +49,11 @@ body {
   font-size: 1.125rem;
   line-height: 133%;
 }
+.text-aside-menu {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 133%;
+}
 .text-body {
   font-weight: 400;
   font-size: 0.9375rem;
@@ -97,6 +102,52 @@ body {
 }
 .header__sandwich-button {
   display: none;
+}
+
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.mobile-aside {
+  min-width: 12.6875rem;
+  width: 50%;
+  height: 100%;
+  background-color: var(--color-almost-white);
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.mobile-aside__header {
+  margin: 1.6875rem 1.25rem 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.mobile-aside__menu {
+  display: grid;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 5.375rem 0 0 1.5rem;
+  padding: 0;
+}
+.mobile-aside__menu a {
+  text-decoration: none;
+  color: var(--color-dark-space-blue);
+  display: inline-block;
+  width: 100%;
+}
+.mobile-aside__menu a:hover {
+  text-decoration: none;
+  color: var(--color-light-vermillion);
+}
+
+#mobile-menu:target {
+  display: block;
 }
 
 .main {
